@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="135" viewBox="0 0 1200 135" role="img" aria-labelledby="title">
+<title id="title">Próximo commit: uma ideia a menos no papel.</title>
+<style>
+  .sans{font-family:Arial,Helvetica,sans-serif}
+  .mono{font-family:'Courier New',monospace}
+  .float{animation:float 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  .cursor{animation:blink 1.4s steps(1,end) infinite}
+  .pulse{animation:pulse 3s ease-in-out infinite}
+  .signal{stroke-dasharray:48 650;animation:signal 9s linear infinite}
+  .reveal{animation:reveal 12s steps(48,end) infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+  @keyframes signal{to{stroke-dashoffset:-698}}
+  @keyframes reveal{0%,8%{width:0}43%,92%{width:1000px}100%{width:0}}
+  @media(prefers-reduced-motion:reduce){.float,.cursor,.pulse,.signal,.reveal{animation:none!important}.reveal{width:1000px}}
+</style>
+<defs><linearGradient id="a"><stop stop-color="#7455B0"/><stop offset=".5" stop-color="#C09CFF"/><stop offset="1" stop-color="#332048"/></linearGradient></defs>
+<rect x=".5" y=".5" width="1199" height="134" rx="18" fill="#0C0E17" stroke="#32273F"/>
+<path d="M32 1H1168" stroke="url(#a)" stroke-width="2"/>
+<text x="600" y="50" class="mono" text-anchor="middle" font-size="13" letter-spacing="3" fill="#AD87E9">PRÓXIMO COMMIT</text>
+<text x="600" y="89" class="sans" text-anchor="middle" font-size="28" font-weight="700" fill="#EEE7FA">Uma ideia a menos no papel.<tspan class="cursor" fill="#B68DFF">_</tspan></text>
+</svg>
